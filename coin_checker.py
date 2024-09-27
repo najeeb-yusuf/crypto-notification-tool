@@ -11,16 +11,16 @@ from twilio.rest import Client
 
 DEX_URL = "https://api.dexscreener.io/latest/dex/search?q="
 TIME = datetime.datetime.now()
-EMAIL = 'najeeb.y@outlook.com'
+EMAIL = 'youremail@gmail.com'
 
-TO_PHONE_NUMBER = '+4407979128641'
+TO_PHONE_NUMBER = '+234234234234'
 
 SERVER = 'smtp.sendgrid.net'
 PORT = 587
 USER = 'apikey'
 PASSWORD = os.environ.get('SENDGRID_API_KEY')
 
-tokens_url = '/Users/najeeb/Desktop/crypto/tokens.csv'
+tokens_url = os.join(os.path(), 'tokens.csv')
 
 def main(up_multiplier=2.0, down_multiplier=0.75):
     prices = {}
